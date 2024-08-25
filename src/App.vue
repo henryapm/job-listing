@@ -2,7 +2,7 @@
   <section class="jobs">
     <div class="filter__container">
       <div v-if="filters.length" class="filter">
-        <span v-for="(toolOrSkill, index) in filters" :key="index"> {{ toolOrSkill }} <button @click="removeFilter(index)">&times;</button></span>
+        <span class="btn__attribute" v-for="(toolOrSkill, index) in filters" :key="index"> {{ toolOrSkill }} <button class="btn__close" @click="removeFilter(index)">&times;</button></span>
       </div>
     </div>
     <ul class="jobs__list">

@@ -39,6 +39,19 @@
   margin-left: 20px;
 }
 
+.btn__attribute{
+  background-color: var(--bg-color);
+  color: var(--desaturated-dark-cyan);
+}
+
+.btn__close{
+  color: white;
+  font-size: 2rem;
+  background-color: var(--desaturated-dark-cyan);
+  padding: .1rem 0.5rem;
+  border: 0px;
+}
+
 .jobs{
   background-color: var(--bg-color);
 }
