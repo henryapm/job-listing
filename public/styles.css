@@ -14,8 +14,14 @@
   --very-dark-grayish-cyan: hsl(180, 14%, 20%);
 }
 
-.filter__container{
+.background{
   background-image: url("./images/bg-header-desktop.svg");
+  background-size: cover;
+  min-height: 156px;
+  background-color: var(--desaturated-dark-cyan);
+}
+
+.filter__container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +29,7 @@
 
 .filters{
   background-color: white;
-  min-height: 60px;
-  margin-bottom: -40%;   
+  min-height: 60px;  
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 327px;
@@ -34,7 +39,6 @@
   gap: 16px;
   align-items: center;
   justify-content: start;
-  margin-bottom: 5rem;
 }
 
 .filter__element{
@@ -121,9 +125,6 @@
   padding: 0.5rem;
 }
 
-.job__item:first-child{
-  margin-top: 3rem;
-}
 .job__description{
   display: flex;
   flex-direction: row;
@@ -168,26 +169,33 @@
 }
 
 @media screen and (max-width: 480px){
-  .filter__container{
+  .background{
     background-image: url("./images/bg-header-mobile.svg");
     background-size: cover;
+    min-height: 156px;
+    background-color: var(--desaturated-dark-cyan);
+  }
+
+  .filter__container{
+    background-image: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 156px;
-    margin-bottom: 2rem;
+    margin-top: -1rem;
   }
   
   .filters{
-    min-width: 327px;
+    width: 307px;
     min-height: 60px;
-    margin-bottom: -40%;
-    padding: 20px 0px 20px 20px
-    
+    padding: 20px 0px 20px 20px;
   }
   
   .filter__element{
 
+  }
+
+  .jobs__list{
+    margin-top: 3rem;
   }
 
   .job__item{

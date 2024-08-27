@@ -1,5 +1,8 @@
 <template>
   <section class="jobs">
+    <div class="background">
+      
+    </div>
     <div class="filter__container">
       <div v-if="filters.length" class="filters">
         <div class="filter__element" v-for="(toolOrSkill, index) in filters" :key="index"><span class="btn__attribute"> {{ toolOrSkill }} </span> <button class="btn__close" @click="removeFilter(index)">&times;</button></div>
