@@ -1,7 +1,7 @@
 <template>
   <section class="jobs">
     <div class="background">
-      
+
     </div>
     <div class="filter__container">
       <div v-if="filters.length" class="filters">
@@ -59,8 +59,8 @@
         let filteredJobsArray = []
         if (this.filters.length > 0) {
           filteredJobsArray = this.jobs.filter(job => {
-            return this.filters.every(prop => {
-              return Object.values(job).includes(prop) || job.languages.includes(prop) || job.tools.includes(prop)
+            return this.filters.every(property => {
+              return Object.values(job).includes(property) || job.languages.includes(property) || job.tools.includes(property)
             });
           });
           // filteredJobsArray = this.jobs.forEach(job => {
