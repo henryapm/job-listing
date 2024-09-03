@@ -37,10 +37,15 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-left: 40px;
   display: flex;
-  flex-wrap: wrap;
   gap: 16px;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
+}
+
+.filter__element__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem
 }
 
 .filter__element{
@@ -62,6 +67,23 @@
   padding: .1rem 0.5rem;
   border: 0px;
   cursor: pointer;
+}
+
+.btn__close:hover{
+  background-color: var(--very-dark-grayish-cyan);
+}
+
+.btn__clear{
+  border: 0;
+  background-color: transparent;
+  color: gray;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn__clear:hover{
+  color: var(--desaturated-dark-cyan)
 }
 
 .jobs{
@@ -166,6 +188,11 @@
   color: var(--desaturated-dark-cyan);
   gap: 2rem;
   cursor: pointer;
+}
+
+.job__element:hover{
+  background-color: var(--desaturated-dark-cyan);
+  color: white;
 }
 
 .job__type{
