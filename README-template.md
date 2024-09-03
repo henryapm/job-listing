@@ -29,8 +29,8 @@ Users should be able to:
 ### Screenshot
 
 ![fullscreen](./fullscreen-capture.PNG)
-![fullscreen with filters](fullscreen-filters-capture.png)
-![mobile version](mobile-capture)
+![fullscreen with filters](fullscreen-filters-capture.PNG)
+![mobile version](mobile-capture.PNG)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
