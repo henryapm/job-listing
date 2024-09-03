@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![fullscreen-capture.png](fullscreen-capture.png)
+![fullscreen](./fullscreen-capture.PNG)
 ![fullscreen with filters](fullscreen-filters-capture.png)
 ![mobile version](mobile-capture)
 
