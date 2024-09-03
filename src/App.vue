@@ -1,11 +1,12 @@
 <template>
   <section class="jobs">
-    <div class="background">
-
-    </div>
+    <div class="background"></div>
     <div class="filter__container">
       <div v-if="filters.length" class="filters">
-        <div class="filter__element" v-for="(toolOrSkill, index) in filters" :key="index"><span class="btn__attribute"> {{ toolOrSkill }} </span> <button class="btn__close" @click="removeFilter(index)">&times;</button></div>
+        <div class="filter__element__wrapper">
+          <div class="filter__element" v-for="(toolOrSkill, index) in filters" :key="index"><span class="btn__attribute"> {{ toolOrSkill }} </span> <button class="btn__close" @click="removeFilter(index)">&times;</button></div>
+          </div>
+        <button class="btn__clear" @click="filters = []">clear</button>
       </div>
     </div>
     <ul class="jobs__list">
@@ -63,9 +64,6 @@
               return Object.values(job).includes(property) || job.languages.includes(property) || job.tools.includes(property)
             });
           });
-          // filteredJobsArray = this.jobs.forEach(job => {
-            
-          // })
           return filteredJobsArray;
         } else {
           return this.jobs
